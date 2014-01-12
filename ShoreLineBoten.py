@@ -12,7 +12,6 @@ def OAuthLogin(consumer_token, consumer_secret):
     try:
         auth = tweepy.OAuthHandler(consumer_token, consumer_secret)
     except tweepy.TweepError:
-        #print 'Error! Failed to get request token.'
         success = 0
     return success, auth
 
